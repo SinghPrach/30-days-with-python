@@ -1,0 +1,6 @@
+num = float(input('Enter any number= '))  # enter the number to be checked
+a = num % 2  # remainder
+if a == 0:
+    print('{0} is an even number'.format(num))
+else:
+    print('{0} is an odd number'.format(num))
