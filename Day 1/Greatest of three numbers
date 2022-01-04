@@ -1,0 +1,10 @@
+x = float(input('Enter the first number= '))    # enter the first number
+y = float(input('Enter the second number= '))   # enter the second number
+z = float(input('Enter the third number= '))    # enter the third number
+    
+if x > y and x > z:
+    print('The greatest number is {0}'.format(x))
+elif y > x and y > z:
+    print('The greatest number is {0}'.format(y))
+elif z > x and z > y:
+    print('The greatest number is {0}'.format(z))
