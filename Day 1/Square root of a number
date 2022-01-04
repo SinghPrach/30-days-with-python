@@ -1,0 +1,14 @@
+# Square root of a real number
+num = 2                  
+# num = float(input('Enter the number='))    //In case the number needs to be inputted by the user
+num1 = num ** 0.5   #square root of num
+print('The square root of %f is %f' % (num, num1))
+print('The square root of %0.3f is %0.3f' % (num, num1))
+print('The square root of {0} is {1}' .format(num, num1))
+
+#square root of a complex number
+import cmath
+#num = 1+3j      //In case the number is already given to the user
+num = eval(input('Enter the number='))
+num1 = cmath.sqrt(num)   #square root of num
+print('The square root of {0} is {1:0.3f}+{2:0.3f}j'.format(num ,num1.real,num1.imag))
