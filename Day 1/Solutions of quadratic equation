@@ -1,0 +1,15 @@
+import cmath
+
+
+def solution(a, b, c):  # function for finding roots of a quadratic equation ax**2 + bx + c
+    d = (b ** 2) - (4 * a * c)
+    d1 = cmath.sqrt(d)
+    r1 = (-b - d1) / (2 * a)
+    r2 = (-b + d1) / (2 * a)
+    return r1, r2
+
+
+a = float(input('Enter the coefficient of x^2 = '))
+b = float(input('Enter the coefficient of x = '))
+c = float(input('Enter the constant term = '))
+print(solution(a, b, c))
