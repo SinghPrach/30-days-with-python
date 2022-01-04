@@ -1,0 +1,6 @@
+a = 5  # first number
+b = 2  # second number
+c = a  # temporary variable
+a = b
+b = c
+print('After swapping a and b become {0} and {1}'.format(a, b))
