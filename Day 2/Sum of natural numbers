@@ -1,0 +1,12 @@
+def sum(n1, n2):        # function for calculating sum of natural numbers in an interval
+    sumv = 0
+    while (n1 <= n2):
+        sumv = sumv + n1
+        n1 = n1 + 1
+    return sumv
+
+
+x = int(input('Enter the lower limit of the interval= '))
+y = int(input('Enter the upper limit of the interval= '))
+
+print('The sum of numbers for the given interval is', sum(x, y))
