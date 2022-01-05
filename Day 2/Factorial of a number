@@ -1,0 +1,26 @@
+# Using for loop
+x = int(input('Enter any number= '))  # enter any natural number
+
+# Factorial of negative numbers does not exist 
+# Factorial of zero is 1
+
+y = x
+
+for i in range(2, x):
+    y = y*i
+
+print('Factorial is ', y)
+
+# Using recursion
+def factorial(num):
+    if num == 0:
+        return 1
+    else:
+        a = num * factorial(num - 1)
+        return a
+
+
+x = int(input('Enter any number= '))  # enter any natural number
+
+y = factorial(x)
+print('Factorial is ', y)
