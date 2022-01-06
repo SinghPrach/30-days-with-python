@@ -1,0 +1,19 @@
+# Finding LCM of any two numbers
+# Formula: Number1 * Number2 = L.C.M. * H.C.F.
+
+def compute_HCF(x, y):
+    while y:
+        x, y = y, x % y
+    return x
+
+
+# This function computes LCM
+def compute_LCM(x, y):
+    lcm = (x * y) // compute_HCF(x, y)
+    return lcm
+
+
+n1 = int(input('Enter any number= '))
+n2 = int(input('Enter any number= '))
+
+print("The L.C.M. is", compute_LCM(n1, n2))
