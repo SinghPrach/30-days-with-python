@@ -1,0 +1,15 @@
+# Python program to throw dices
+
+# importing modules
+import itertools, random
+
+# make a deck of cards
+dice = list(itertools.product(range(1, 7), ['*', '**', '***', '****', '*****', '******']))
+
+
+random.shuffle(dice)
+
+# throw the dice
+print("You got:")
+for i in range(1):
+    print(dice[i][0], "of", dice[i][1])
