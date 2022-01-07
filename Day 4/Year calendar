@@ -1,0 +1,10 @@
+# Display calendar of the given year
+
+# importing calendar module
+import calendar
+
+yy = int(input("Enter any year: "))
+
+# display the calendar of the year
+for mm in range(1, 13):
+    print(calendar.month(yy, mm))
