@@ -1,0 +1,16 @@
+# Factorial of a number using recursion
+
+def Factorial(n):
+    if n <= 1:
+        return 1
+    else:
+        return Factorial(n - 1) * n
+
+
+n_terms = int(input('Enter the number of terms: '))
+
+if n_terms <= 0:
+    print('Factorial is 1')
+else:
+    print('Factorial:  ')
+    print(Factorial(n_terms))
