@@ -1,0 +1,20 @@
+# transpose of a matrix in the most basic way
+# two matrices whose values have been entered manually in the program already
+
+X = [[12, 7],
+     [4, 5],
+     [7, 8]]
+
+result = [[0, 0, 0],
+          [0, 0, 0]]
+
+# print('X[1][2]: ', X[1][2])  # 6
+# print('X[0][2]: ', X[0][2])  # 3
+# print('X[2][1]: ', X[2][1])  # 8
+
+for i in range(len(X)):
+    for j in range(len(X[0])):
+        result[j][i] = X[i][j]
+
+for r in result:
+    print(r)
