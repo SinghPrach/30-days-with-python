@@ -1,0 +1,18 @@
+# Fibonacci sequence
+
+def Fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return Fibonacci(n - 1) + Fibonacci(n - 2)
+
+
+n_terms = int(input('Enter the number of terms: '))
+
+# check if the number of terms is valid
+if n_terms <= 0:
+    print('Enter valid number')
+else:
+    print('Fibonacci sequence:')
+    for i in range(n_terms):
+        print(Fibonacci(i))
