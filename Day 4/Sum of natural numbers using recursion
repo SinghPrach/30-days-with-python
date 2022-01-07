@@ -1,0 +1,17 @@
+# Sum of natural numbers using recursion
+
+def Sum_natural(n):
+    if n <= 1:
+        return n
+    else:
+        return Sum_natural(n - 1) + n
+
+
+n_terms = int(input('Enter the number of terms: '))
+
+# check if the number of terms is valid
+if n_terms <= 0:
+    print('Enter valid number')
+else:
+    print('Sum of the series: ')
+    print(Sum_natural(n_terms))
