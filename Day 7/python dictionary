@@ -1,0 +1,10 @@
+# creating a dictionary
+my_dict = {'name': 'Jack', 'age': 26}
+
+# [] for retrieving elements
+print(my_dict['name'])
+
+# get for retrieving elements
+print(my_dict.get('age'))
+
+print(my_dict.get('address'))
