@@ -1,0 +1,11 @@
+# pyramid of '*' signs
+def pyramid_stars(num):
+    for i in range(num):
+        for j in range(i + 1):
+            print("* ", end="")
+        print("\n")
+
+
+num_rows = int(input('Enter the number of rows you want to print: '))
+pyramid_stars(num_rows)
+
