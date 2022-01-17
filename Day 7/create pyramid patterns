@@ -9,3 +9,14 @@ def pyramid_stars(num):
 num_rows = int(input('Enter the number of rows you want to print: '))
 pyramid_stars(num_rows)
 
+# pyramid of numbers
+def pyramid_numbers(num):
+    for i in range(num):
+        for j in range(i + 1):
+            print(j+1, end='')
+        print("\n")
+
+
+num_rows = int(input('Enter the number of rows you want to print: '))
+pyramid_numbers(num_rows)
+
