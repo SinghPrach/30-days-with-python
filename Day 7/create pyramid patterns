@@ -20,3 +20,14 @@ def pyramid_numbers(num):
 num_rows = int(input('Enter the number of rows you want to print: '))
 pyramid_numbers(num_rows)
 
+# pyramid of alphabets
+num_rows = int(input('Enter the number of rows you want to print: '))
+ascii_value = 65
+
+for i in range(num_rows):
+    for j in range(i + 1):
+        alphabet = chr(ascii_value)
+        print(alphabet, end=' ')
+
+    ascii_value += 1
+    print("\n")
