@@ -26,3 +26,7 @@ my_list = [1, 2, 'Prachi', 'Singh', 5, 6, 7]
 print(my_list[::2])
 #Output: [1, 'Prachi', 5, 7]
 
+my_list = [1, 2, 'Prachi', 'Singh', 5, 6, 7]
+
+print(my_list[1:4:2])
+#Output: [2, 'Singh']
