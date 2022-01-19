@@ -11,3 +11,10 @@ if not len(my_list):
     print('The list is empty')
 else:
     print('The list is non-empty')
+
+#Comparing with an empty list
+my_list = []
+if my_list == []:
+    print('The list is empty')
+else:
+    print('The list is non-empty')
