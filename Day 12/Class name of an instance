@@ -1,0 +1,10 @@
+#Using __class__.__name__
+class Class_name:
+    def name(self, name):
+        return name
+
+
+V = Class_name()
+print(V.__class__.__name__)
+
+
