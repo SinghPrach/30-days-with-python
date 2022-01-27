@@ -1,3 +1,5 @@
+# Integrate a bessel function jv(2.5, x) along the interval [0,4.5]
+
 import scipy.integrate as integrate
 import scipy.special as special
 
