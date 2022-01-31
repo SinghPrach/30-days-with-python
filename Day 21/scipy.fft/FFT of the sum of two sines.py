@@ -46,3 +46,25 @@ plt.semilogy(xf[1:N//2], 2.0/N * np.abs(ywf[1:N//2]), '-r')
 plt.legend(['FFT', 'FFT w. window'])
 plt.grid()
 plt.show()
+
+
+# Example 3
+
+from scipy.fft import fft, fftfreq, fftshift
+import matplotlib.pyplot as plt
+import numpy as np
+
+# number of signal points
+N = 400
+# sample spacing
+T = 1.0 / 800.0
+x = np.linspace(0.0, N*T, N, endpoint=False)
+y = np.exp(50.0 * 1.j * 2.0*np.pi*x) + 0.5*np.exp(-80.0 * 1.j * 2.0*np.pi*x)
+yf = fft(y)
+xf = fftfreq(N, T)
+xf = fftshift(xf)
+yplot = fftshift(yf)
+
+plt.plot(xf, 1.0/N * np.abs(yplot))
+plt.grid()
+plt.show()
