@@ -1,0 +1,23 @@
+# TYPE FUNCTION DESCRIPTION
+
+# block diagonal = scipy.linalg.block_diag =  Create a block diagonal matrix from the provided arrays.
+
+# circulant =  scipy.linalg.circulant =  Create a circulant matrix.
+
+# companion =  scipy.linalg.companion =  Create a companion matrix.
+
+# convolution =  scipy.linalg.convolution_matrix  = Create a convolution matrix.
+
+# Discrete Fourier  = scipy.linalg.dft =  Create a discrete Fourier transform matrix.
+
+# Fiedler  = scipy.linalg.fiedler  = Create a symmetric Fiedler matrix.
+
+# Fiedler Companion =  scipy.linalg.fiedler_companion =  Create a Fiedler companion matrix.
+
+# Hadamard =  scipy.linalg.hadamard =  Create an Hadamard matrix.
+
+# Hankel =  scipy.linalg.hankel  = Create a Hankel matrix.
+
+# Helmert  = scipy.linalg.helmert  = Create a Helmert matrix.
+
+# Hilbert =  scipy.linalg.hilbert =  Create a Hilbert matrix.
