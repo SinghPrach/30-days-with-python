@@ -1,0 +1,9 @@
+# Exponential and logarithm functions
+linalg.expm
+linalg.logm
+
+# Trigonometric functions
+linalg.sinm, linalg.cosm, and linalg.tanm
+
+# Hyperbolic trigonometric functions
+linalg.sinhm, linalg.coshm, and linalg.tanhm
