@@ -16,7 +16,7 @@ Dop = Diagonal(d, dtype=np.float64)
 evals_all, evecs_all = eigh(D)
 evals_large, evecs_large = eigsh(Dop, 3, which='LA', maxiter=1e3)
 evals_all[-3:]
-evals_large
+evals_large 
 print(np.dot(evecs_large.T, evecs_all[:,-3:]))
 class FirstDerivative(LinearOperator):
     def __init__(self, N, dtype='float32'):
