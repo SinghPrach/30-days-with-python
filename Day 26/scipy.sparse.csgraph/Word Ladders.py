@@ -22,3 +22,17 @@ word_list[i1]
 # 'ape'
 word_list[i2]
 # 'man'
+
+# Dijkstra’s algorithm, because it allows us to find the path for just one node
+from scipy.sparse.csgraph import dijkstra
+distances, predecessors = dijkstra(graph, indices=i1,...                                    return_predecessors=True)
+print(distances[i2])
+# 5.0    # may vary
+path = []
+i = i2
+while i != i1:
+  path.append(word_list[i])
+  i = predecessors[i]
+path.append(word_list[i1])
+print(path[::-1])
+['ape', 'apt', 'opt', 'oat', 'mat', 'man']    # may vary
