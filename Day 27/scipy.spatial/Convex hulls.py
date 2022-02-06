@@ -1,3 +1,5 @@
+'''A convex hull is the smallest convex object containing all points in a given point set.'''
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.spatial import ConvexHull
