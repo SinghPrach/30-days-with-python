@@ -9,4 +9,7 @@ print norm.cdf(np.array([1,-1., 0, 1, 3, 4, -2, 6]))
 from scipy.stats import norm
 print norm.ppf(0.5)
 
+# To generate a sequence of random variates.
 
+from scipy.stats import norm
+print norm.rvs(size = 5)
